@@ -1,5 +1,5 @@
 data = []
-with open("test_1000000.txt", "r") as file:
+with open("test_10000.txt", "r") as file:
     line = file.readline()
     for x in line.split():
         data.append(float(x))
@@ -37,7 +37,7 @@ def _mult(arr):
 import datetime
 
 start_time = datetime.datetime.now()
-print(_sum(data))
+print(_mult(data))
 end_time = datetime.datetime.now()
 print(end_time - start_time)
 
